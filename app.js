@@ -36,6 +36,11 @@ app.get('/hello',function(req,res){
 	res.render('hello');
 });
 
+app.post('/hello',function(req,res){
+	res.locals.message =req.body.greeting;
+	res.render('hello');
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
