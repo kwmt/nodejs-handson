@@ -4,7 +4,7 @@ html
         title サイトタイトル
     body
         h1 こんにちは
-        p #{message} へようこそ
+        p.hoge#fuga !{message} へようこそ
         form(action="/hello", method="post")
            input(type="text", name="greeting")
            input(type="submit", value="送信") 

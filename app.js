@@ -37,7 +37,7 @@ app.get('/hello',function(req,res){
 });
 
 app.post('/hello',function(req,res){
-	res.locals.message =req.body.greeting;
+	res.locals.message ='<b>ほげ</b>';
 	res.render('hello');
 });
 
