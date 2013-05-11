@@ -32,6 +32,7 @@ app.get('/users', user.list);
 
 //app.HTTPメソッド名（'ルートからのURLパス’, 無名関数)
 app.get('/hello',function(req,res){
+	res.locals.message ='expressハンズオン';
 	res.render('hello');
 });
 
