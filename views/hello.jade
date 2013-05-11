@@ -1,8 +1,5 @@
-!!!
-html
-    head
-        title サイトタイトル
-    body
+extends layout
+block content
         h1 こんにちは
         p.hoge#fuga !{message} へようこそ
         form(action="/hello", method="post")
