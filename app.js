@@ -30,6 +30,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 
+//app.HTTPメソッド名（'ルートからのURLパス’, 無名関数){
 app.get('/hello',function(req,res){
 	res.send('Hello');
 });
