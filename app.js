@@ -31,7 +31,7 @@ app.get('/', routes.index);
 app.get('/users', user.list);
 
 //app.HTTPメソッド名（'ルートからのURLパス’, 無名関数)
-app.get('/hello/:greeting',function(req,res){
+app.get('/hello',function(req,res){
 	res.locals.message =req.params.greeting;
 	res.render('hello');
 });
